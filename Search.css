@@ -3,7 +3,7 @@ body{
 	background-color: #ffffff;
 }
 .search1{
-	font-size: 180%;
+	font-size: 150%;
 	width: 50%;
 	border-radius: 30px;
 	outline: none;
@@ -14,7 +14,6 @@ body{
 	border-color: #919194;
 	margin-left: 25%;
 	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
 }
 .img1{
 	height: 20%;
