@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEARCH</title>
+	<link rel="stylesheet" type="text/css" href="Search.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onkeypress="search2(event, this)">
+	<img src="Search.png" class="img1">
+	<br>
+	<input type="text" name="searh" class="search1" id="s" placeholder="Search here">
+	<span class="glyphicon" onclick="search()">&#xe003;</span>
+	<script>
+		function search()
+		{
+			var string = document.getElementById('s').value;
+			var news = "https://www.google.com/search?q="+string;
+			window.location = news;
+		}
+		function search2(e,textarea)
+		{
+			var code = (e.keyCode ? e.keyCode : e.which);
+			if(code == 13) 
+			{
+				var string = document.getElementById('s').value;
+				var news = "https://www.google.com/search?q="+string;
+				window.location = news;
+			}
+		}
+	</script>
+</body>
+</html>
